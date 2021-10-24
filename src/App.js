@@ -19,7 +19,7 @@ function App() {
     if (!contacts) {
       return;
     }
-    localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
+    localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 
   const addContact = (name, number) => {
